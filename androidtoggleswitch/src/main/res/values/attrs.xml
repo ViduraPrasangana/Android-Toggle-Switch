@@ -7,6 +7,10 @@
         <attr name="textToggleLeft"     format="string" localization="suggested" />
         <attr name="textToggleRight"    format="string" localization="suggested" />
 
+        <attr name="widthToggleCenter"   format="dimension" localization="suggested" />
+        <attr name="widthToggleLeft"     format="dimension" localization="suggested" />
+        <attr name="widthToggleRight"    format="dimension" localization="suggested" />
+
         <attr name="activeBgColor"      format="color"/>
         <attr name="activeTextColor"    format="color"/>
         <attr name="inactiveBgColor"    format="color"/>

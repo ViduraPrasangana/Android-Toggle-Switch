@@ -57,6 +57,26 @@ dependencies {
         custom:textToggleLeft="OR"
         custom:textToggleRight="AND"/>
 ```
+Width of each toggle button can be given as below.
+
+```xml
+<belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:textToggleCenter="XOR"
+        custom:textToggleLeft="OR"
+        custom:textToggleRight="AND"
+        custom:widthToggleCenter="100dp"
+        custom:widthToggleLeft="50dp"
+        custom:widthToggleRight="100dp"/>
+```
+This width overrides the default width given by
+```xml
+<belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:toggleWidth="120dp"/>
+```
 
 ![Sample of libray with 3 items](docs/3_items.gif)
 
@@ -83,6 +103,27 @@ labels.add("NOT");
 labels.add("OFF");
 toggleSwitch.setLabels(labels);
 ```
+
+Add custom width (optional)
+
+JAVA code
+```java
+ToggleSwitch toggleSwitch = (ToggleSwitch) findViewById(R.id.multiple_switches);
+ArrayList<String> labels = new ArrayList<>();
+ArrayList<Float> sizes = new ArrayList<>();
+labels.add("AND");
+labels.add("OR");
+labels.add("XOR");
+labels.add("NOT");
+labels.add("OFF");
+sizes.add(80f);
+sizes.add(100f);
+sizes.add(120f);
+sizes.add(-1f);  //Default width fromo toggleWidth
+sizes.add(-1f);  //Default width fromo toggleWidth
+toggleSwitch.setLabels(labels,sizes);
+```
+
 ![Sample of libray with 3 items](docs/n_items.gif)
 
 NOTE: Providing a custom array of labels, the attributes textToggle[Left/Center/Right] will be ignored.
