@@ -70,13 +70,7 @@ Width of each toggle button can be given as below.
         custom:widthToggleLeft="50dp"
         custom:widthToggleRight="100dp"/>
 ```
-This width overrides the default width given by
-```xml
-<belka.us.androidtoggleswitch.widgets.ToggleSwitch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        custom:toggleWidth="120dp"/>
-```
+This width overrides the default width given by `custom:toggleWidth="120dp"`
 
 ![Sample of libray with 3 items](docs/3_items.gif)
 
@@ -119,8 +113,8 @@ labels.add("OFF");
 sizes.add(80f);
 sizes.add(100f);
 sizes.add(120f);
-sizes.add(-1f);  //Default width fromo toggleWidth
-sizes.add(-1f);  //Default width fromo toggleWidth
+sizes.add(-1f);  //Default width from toggleWidth
+sizes.add(-1f);  //Default width from toggleWidth
 toggleSwitch.setLabels(labels,sizes);
 ```
 
